@@ -16,12 +16,38 @@ header {
 
 }
 
-.main-header {
-  background-color: grey;
-
+.main-header,
+.contact {
+  background-color: #fafafa;
 }
 
 h1 {
+  color: #4a4a4a;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #4a4a4a;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 40px 0;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  line-height: 1.6em;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 .main-nav {
@@ -30,16 +56,6 @@ h1 {
 
 }
 
-.main-nav li {
-  list-style-type: none;
-  font-size: 1em;
-  margin-top: 10px;
-  background-color: white;
-  padding: 10px 0;
-  display: block;
-  text-transform: uppercase;
-
-}
 
 a:link {
   color: grey;
@@ -48,11 +64,83 @@ a:link {
 
 a:hover {
   color: red;
+  background-color: slategrey;
+}
 
+.special-text {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: 100;
+
+}
+
+
+
+.main-nav li {
+  list-style-type: none;
+  font-size: 1em;
+  margin-top: 10px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.main-nav li a {
+  display: block;
+  padding: 10px 0;
+  color: black;
 }
 
 .top-image {
   width: 300px;
   margin: 30px 0;
+}
+
+.portfolio-images {
+width: 100%;
+
+}
+
+.contact-number {
+font-weight: 800;
+
+}
+
+strong {
+  margin-left: 10px;
+}
+
+.contact-detail {
+  margin:0 0;
+  padding-bottom: 0;
+}
+
+.container p {
+  padding-bottom: 10px;
+}
+
+.contact-info {
+  margin-top: 20px;
+
+}
+
+.footer-top {
+  float: right;
+  text-transform: uppercase;
+}
+
+.footer-name {
+  float: left;
+}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
 
 }
