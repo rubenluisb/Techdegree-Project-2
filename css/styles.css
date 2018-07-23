@@ -1,5 +1,9 @@
 /* Web Fonts---------------------*/
 
+* {
+	box-sizing: border-box;
+}
+
 body {
   font-family: 'Heebo', sans-serif;
 }
@@ -44,7 +48,7 @@ h3 {
 p {
   margin-top: 10px;
   margin-bottom: 0;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   line-height: 1.6em;
   font-size: 1em;
   font-weight: 100;
@@ -117,7 +121,7 @@ strong {
 }
 
 .container p {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .contact-info {
@@ -133,6 +137,82 @@ strong {
 .footer-name {
   float: left;
 }
+
+.thumb h2 {
+  margin-top: 30px;
+}
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    margin: 40px 0;
+
+  }
+  .main-nav li a {
+  padding: 0;
+
+  }
+
+  .thumb {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+  }
+
+
+  .top-image {
+    float: right;
+    margin: 0;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .special-text {
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    background-color: inherit;
+    padding: 0 20px;
+
+  }
+
+  .portfolio,
+  .home {
+    border-right: solid 1px #4a4a4a;
+
+  }
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+  .thumb {
+    width: 33%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+
+
+
 
 
 	/* ---- Float clearfix ---- */
