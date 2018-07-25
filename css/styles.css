@@ -17,21 +17,16 @@ header {
 	max-width: 1024px;
   margin: 0 auto;
   text-align: center;
-  padding: 5px;
+  padding-top: 1px;
 }
 
 .main-header,
 .contact {
-	background-color: orange;
+	background-color: grey;
 }
 
 h1 {
   color: #4a4a4a;
-}
-
-main {
-
-	border: solid 1px blue;
 }
 
 h2 {
@@ -192,7 +187,8 @@ padding: 1px;
     margin: 40px 0;
 
   }
-  .main-nav li a {
+
+	.main-nav li a {
   padding: 0;
 
   }
@@ -229,15 +225,6 @@ padding: 1px;
     border-right: solid 1px #4a4a4a;
 
   }
-
-	.intro {
-		border: solid 1px red;
-
-	}
-
-
-
-
 }
 
 
@@ -253,15 +240,19 @@ padding: 1px;
 
 	.name {
 		float: left;
+		margin: 0;
 	}
 
 	.main-nav {
+		margin: 0;
 		float: right;
 	}
 
 	.title {
-		margin: 0;
+		margin: 25px 0;
 	}
+
+}
 
 
 
