@@ -123,7 +123,8 @@ hr {
 .contact {
 	margin: 0;
 	padding: 0;
-	background: #e0ab26 url('../images/back.png') bottom center repeat-x;
+	background: radial-gradient(transparent, orange),
+							#e0ab26 url('../images/back.png') bottom center repeat-x;
 }
 
 .portfolio-images {
@@ -235,8 +236,7 @@ font-weight: 800;
   .portfolio,
   .home {
     border-right: solid 1px white;
-
-  }
+	}
 }
 
 
@@ -250,9 +250,10 @@ font-weight: 800;
     padding-right: 20px;
   }
 
-	.name {
+	.name-wide {
 		float: left;
 		margin: 0;
+		font-size: 4em;
 	}
 
 	.main-nav {
@@ -261,17 +262,22 @@ font-weight: 800;
 	}
 
 	.title {
-		margin: 25px 0;
+		margin-top: 50px;
 	}
 
 	.special-text {
-		margin-top: 10px;
+		font-size: 1.6em;
+		margin-top: 30px;
 	}
 
 	.name {
-		font-size: 4em;
+		display: none;
 	}
 
+
+	.title {
+		margin-bottom: 0;
+	}
 }
 
 
@@ -291,6 +297,13 @@ font-weight: 800;
 @media (min-width: 419px) {
 
   .footer-top {
+		display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .name-wide {
 		display: none;
   }
 }
