@@ -1,5 +1,9 @@
 /* Web Fonts---------------------*/
 
+/* =================================
+  Base Element Styles
+==================================== */
+
 * {
 	box-sizing: border-box;
 }
@@ -10,19 +14,6 @@ body {
 
 header {
   text-align: center;
-}
-
-.container {
-  width: 90%;
-	max-width: 1024px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 1px;
-}
-
-.main-header,
-.contact {
-	background-color: grey;
 }
 
 h1 {
@@ -48,20 +39,11 @@ h3 {
 p {
   margin-top: 10px;
   margin-bottom: 0;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   line-height: 1.6em;
   font-size: 1em;
   font-weight: 100;
 }
-
-.main-nav {
-  padding: 0;
-  margin-top: 20px;
-
-}
-
-
-
 
 a:link {
   color: grey;
@@ -73,21 +55,29 @@ a:hover {
   background-color: slategrey;
 }
 
-.special-text {
-  margin-top: 10px;
-  line-height: 1.5em;
-  font-size: 1.2em;
-  font-weight: 100;
-
+strong {
+  margin-left: 10px;
 }
 
+hr {
+	margin-top: 30px;
+}
 
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+  padding: 0;
+  margin-top: 20px;
+}
 
 .main-nav li {
   list-style-type: none;
   font-size: 1em;
   margin-top: 10px;
-  background-color: white;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -95,26 +85,57 @@ a:hover {
 .main-nav li a {
   display: block;
   padding: 10px 0;
-  color: black;
+  color: white;
 }
+
+/* ---- Main Header ---- */
 
 .top-image {
   width: 300px;
   margin: 30px 0;
 }
 
+.container {
+  width: 90%;
+	max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.special-text {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+/* ---- Main---- */
+
+
+.main-header,
+.contact {
+	background-color: #e0ab26;
+	color: white;
+}
+
+.main-header,
+.contact {
+	margin: 0;
+	padding: 0;
+	background: #e0ab26 url('../images/back.png') bottom center repeat-x;
+}
+
 .portfolio-images {
 width: 100%;
+}
 
+.thumb h2 {
+  margin-top: 30px;
 }
 
 .contact-number {
 font-weight: 800;
-
-}
-
-strong {
-  margin-left: 10px;
 }
 
 .contact-detail {
@@ -122,25 +143,14 @@ strong {
   padding-bottom: 0;
 }
 
-.container p {
-  padding-bottom: 40px;
-}
-
 .contact-info {
   margin-top: 20px;
-
 }
-
-
 
 .footer-name {
 	margin: 0;
 	float: left;
 	font-size: 1em;
-}
-
-.thumb h2 {
-  margin-top: 30px;
 }
 
 .footer-top {
@@ -152,9 +162,7 @@ strong {
 
 .footer {
 	margin: 25px 0;
-
 }
-
 
 .footer-nav ul {
 	margin: 0;
@@ -169,11 +177,15 @@ strong {
 .footer-nav li {
 	display: inline-block;
 	margin-left: 20px;
-
 }
 
-.footer {
-padding: 1px;
+.contact-info p {
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+.contact p {
+	padding: 0;
 }
 
 
@@ -185,13 +197,11 @@ padding: 1px;
 
   .main-nav {
     margin: 40px 0;
-
-  }
+	}
 
 	.main-nav li a {
-  padding: 0;
-
-  }
+  	padding: 0;
+	}
 
   .thumb {
     width: 50%;
@@ -202,15 +212,17 @@ padding: 1px;
 
   .top-image {
     float: right;
-    margin: 0;
-    width: 50%;
+		margin-top: 0;
+		margin-bottom: 50px;
+		width: 50%;
     max-width: 500px;
   }
 
   .special-text {
     text-align: left;
     float: left;
-    width: 40%;
+    width: 50%;
+		margin-top: 50px;
   }
 
   .main-nav li {
@@ -222,7 +234,7 @@ padding: 1px;
 
   .portfolio,
   .home {
-    border-right: solid 1px #4a4a4a;
+    border-right: solid 1px white;
 
   }
 }
@@ -252,6 +264,14 @@ padding: 1px;
 		margin: 25px 0;
 	}
 
+	.special-text {
+		margin-top: 10px;
+	}
+
+	.name {
+		font-size: 4em;
+	}
+
 }
 
 
@@ -273,6 +293,8 @@ padding: 1px;
   .footer-top {
 		display: none;
   }
+}
+
 
 
 
