@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  margin: 40px 0;
+  margin: 60px 0;
   color: #4a4a4a;
   text-transform: uppercase;
   font-size: 1em;
@@ -61,6 +61,11 @@ strong {
 
 hr {
 	margin-top: 30px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 /* =================================
@@ -187,6 +192,22 @@ font-weight: 800;
 
 .contact p {
 	padding: 0;
+}
+
+.skills {
+	padding-bottom: 30px;
+	padding-top: 1px;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+.skills li {
+	margin: 15px;
+	display: inline-block;
+}
+
+.skills h3 {
+	margin-bottom: 40px;
 }
 
 
