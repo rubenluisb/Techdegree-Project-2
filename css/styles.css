@@ -303,6 +303,10 @@ font-weight: 800;
 		margin: 0 auto;
 		padding: 0 25px;
 	}
+
+	.footer-top {
+		display: none;
+	}
 }
 
 
@@ -353,13 +357,6 @@ font-weight: 800;
 @media (max-width: 767px) {
 
   .footer-nav {
-		display: none;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .footer-top {
 		display: none;
   }
 }
